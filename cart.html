@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang ="en"></html>
+<html>
+    <head>   
+        <title>Jolie | Cart</title>
+        <style>
+            body{
+              background-color: rgb(208, 223, 228); 
+                   
+            }
+
+            #head{
+            display: flex;
+            flex-flow: row;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            margin: 8px;
+            padding: 4px;
+            }
+            #logo { 
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+        .button{
+         border: none;
+         color: black ;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         border-radius: 4px;
+         outline: none;
+         margin: 10px;
+         padding: 10px;
+         }
+
+        .button:hover{
+         background-color: rgba(128, 128, 128, 0.226);
+         }
+
+         #h1{
+        color: white;
+       font-style: italic;
+       font-weight: bold;
+       text-align: center;
+         }
+
+         .clear{
+             display:flex;
+             justify-content: center;
+             flex-direction: column;
+             margin: auto;
+            width: 50%;
+         }
+
+         #info-list{
+           display: flex;
+           list-style: none;
+           border-top: 2px solid rgba(229, 82, 92, 0.5);
+           border-bottom: 2px solid rgba(229, 82, 92, 0.5);
+           padding: 15px;
+           justify-content: space-between;
+           font-style: italic;
+           font-size: 20px;
+         }
+
+
+         #div{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        }
+
+        #count{
+          margin-bottom: 120px;
+          font-size: 30px;
+          font-style: italic;
+        }
+
+        #rec{
+          font-size: 20px;
+          font-style: italic;
+          margin: auto;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+
+
+        .buttons{
+          display: flex;
+          width: 100px;
+          height: 50px;
+          margin: 10px;
+          color: white;
+          font-weight: bold;
+          margin-bottom: auto;
+          align-items: center;
+          justify-content: space-between;
+
+        }
+
+        .b1, .b2, .b3{
+          width: 100px;
+          height: 50px;
+          margin: 10px;
+          color: white;
+          font-weight: bold;
+          background-color: #313044;
+          color: white;
+          font-weight: bold;
+        }
+
+        .b1:hover, .b2:hover, .b3:hover{
+          background-color: white;
+          border-color: #313044;
+          color: #313044;
+        }
+
+        .products-container{
+            max-width: 650px;
+            justify-content: space-around;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .products-container ion-icon{
+            font-size: 25px;
+            color: blue;
+            margin-left: 10px;
+            margin-right: 10px;
+            visibility: hidden;
+        }
+
+        .products{
+          width: 45%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 10px 0;
+          padding-bottom: 20px;
+          flex-wrap: wrap;
+        }
+
+
+
+         .clear{
+           width: 70%;
+
+         }
+
+         .basketTotalContainer{
+           display: flex;
+           justify-content: flex-end;
+           width: 100%;
+           padding: 10px 0;
+         }
+
+         .basketTotalTitle{
+           width: 30%;
+         }
+
+         .basketTotal{
+           width: 10%;
+         }
+
+         .price{
+           width: 15%;
+           display: flex;
+           align-items: center;
+           margin-left: 10px;
+           margin-right: 10px;
+         }
+
+         .quantity{
+           width: 20%;
+           display: flex;
+           align-items: center;
+           margin-left: 10px;
+           margin-right: 10px;
+         }
+
+         .total{
+           width: 10%;
+           display: flex;
+           align-items: center;
+         }
+
+         .product{
+           width: 45%;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           padding: 10px 0;
+           margin-left: 10px;
+           margin-right: 10px;
+         }
+         .cent{
+           display: flex;
+           justify-content: center;
+           margin-top: 15px;
+           color: #313044;
+
+         }
+
+
+
+        </style>
+   
+    </head>
+    <body> 
+        <div id="content">
+
+        <ul id="head">
+            <li><a class="button" href="home.html">Home</a></li>
+            <li><a class="button" href ="about.html">About</a></li>
+           
+         
+            <li id="logo"><img src="JolieL.png" height="100" width="100"></li>
+            <li><a class="button" href="signup.html">Sign up</a></li>   
+            <li class="cart" ><a class="button" href="Cart.html">Cart</a>(<span>0</span>)</li>
+        </ul>
+        
+
+       
+        </div>  
+        
+        
+        </div>
+      </div>
+      <div class="clear products-container">
+        <h1 id="h1">Shopping Cart</h1>  
+        <div class="cent">
+          <button class="button buttons cent">check out</button>
+        </div>
+        <ul id="info-list">
+          <li class="product">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="total">Total</li>
+        </ul>
+
+        <div id="div" class="products">
+
+        </div>
+     
+       
+        
+      </div>
+
+      
+
+    </div>
+   <div>
+   </div>
+    <script src="storeF.js" src="storeG.js" src="storeC.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
+

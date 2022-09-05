@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang ="en"></html>
+<html>
+    <head>   
+        <title>Jolie | Sign up</title>
+        <style>
+            body{
+                background-color: rgb(208, 223, 228);    
+            }
+
+            #head{
+            display: flex;
+            flex-flow: row;
+            list-style: none;
+            justify-content: space-around;
+            align-content: center;
+            margin: 8px;
+            padding: 4px;
+            }
+
+            li{
+            margin: 1px;
+            padding: 1px ;
+            }
+
+            #logo {
+           
+            margin-left: auto;
+            margin-right: auto;
+            flex-grow: 0;
+            flex-shrink: 1;
+            align-self: auto;
+           }
+
+
+        .button{
+         border: none;
+         background-color:rgba(0, 0, 0, 0);
+         color: black ;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         border-radius: 4px;
+         transition: ease-out 0.3s;
+         outline: none;
+         margin: 10px;
+         padding: 10px;
+         }
+
+        .button:hover{
+         background-color: rgba(128, 128, 128, 0.226);
+         }
+
+         #h1{
+       color: white;
+       font-style: italic;
+       font-weight: bold;
+       text-align: center;
+      }
+
+.wrapper{
+    display: flex;
+    margin: auto;
+    width: 85%;
+    background-color: #ccdee2;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+p{
+    text-align: center;
+    color: #525160;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#F1, #F2, #F3, #F4{
+    margin: 40px;
+    border:2px solid rgba(229, 82, 92, 0.5);
+    border-radius:8px;
+    padding: 20px;
+}
+
+legend{
+    font-weight: normal;
+    font-style: italic;
+    
+}
+
+input, select{
+    border-radius:4px;
+    border: 2px solid gray;
+    margin: 5px;
+}
+
+label{
+    font-weight: bold;
+    margin: 5px;
+}
+
+#Csecure{
+    width: 45px;
+}
+
+.buttonC{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: white;
+    border-color: #313044;
+    color: #313044;
+    
+}
+
+button{
+    background-color: #313044;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    margin: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login{
+    align-items: center;
+}
+
+.signup{
+    margin-right: auto;
+}
+
+.message1, .message2{
+    color: red;
+    size: 30px;
+}
+
+.true{
+    display: none;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+
+         
+        </style>
+   
+    </head>
+    <body>
+        <div id="content">
+
+        <ul id="head">
+            <li><a class="button" href="home.html">Home</a></li>
+            <li><a class="button" href ="about.html">About</a></li>
+            
+         
+            <li id="logo"><img src="JolieL.png" height="100" width="100"></li>
+            <li><a class="button" href="signup.html">Sign up</a></li>
+            <li class="cart"><a class="button" href="Cart.html">Cart</a>(<span>0</span>)</li>
+        </ul>
+
+        <div class="true"><img src="true.png" height="100" width="120"/></div>
+        <div class="wrapper">
+            <div class="signup">
+                <h1 id="h1">Sign Up</h1>
+                <p>Please fill in all the information to Sign Up</p>
+                <form name="signup" action="process.php">
+                    <fieldset id="F1">
+                        <legend>Customer's information</legend>
+                        <table>
+                            <tr>
+                                <td><label>Name*: </label></td>
+                                <td><input type="text" name="Fname" id="Fname" placeholder="Enter your first name" required/></td>
+                                <td><input type="text" name="Lname" id="Lname" placeholder="Enter your last name"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>E-mail: </label></td>
+                                <td><input type="email" name="email" id="email" placeholder="Enter your E-mail"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Phone number*: </label></td>
+                                <td><input type="number" name="phone" id="phone" placeholder="Enter your phone #" required/></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+    
+                    <fieldset id="F2">
+                        <legend>Shipping address information</legend>
+                        <table>
+                            <tr>
+                                <td><label>Country*: </label></td>
+                                <td>
+                                    <select name="country" id="country" required>
+                                        <option value="default">Choose a country</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="Sudan">Sudan</option>
+                                        <option value="Iraq">Iraq</option>
+                                        <option value="Morocco">Morocco</option>
+                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                        <option value="Yemen">Yemen</option>
+                                        <option value="Syria">Syria</option>
+                                        <option value="Tunisia">Tunisia</option>
+                                        <option value="Jordan">Jordan</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>City*: </label></td>
+                                <td><input type="text" name="city" id="city" placeholder="Enter your city" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Street address*: </label></td>
+                                <td><textarea name="street" id="street" rows="5" cols="25" placeholder="Street information here" required></textarea></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset id="F3">
+                        <legend>Credit card details</legend>
+                        <table>
+                            <tr>
+                                <td><label>Name*: </label></td>
+                                <td><input type="text" name="CFname" id="CFname" placeholder="Enter first name here" required/></td>
+                                <td><input type="text" name="CLname" id="CLname" placeholder="Enter last name here" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Credit card number*: </label></td>
+                                <td><input type="number" name="Cnumber" id="Cnumber" maxlength="16" minlength="16" placeholder="•••• •••• •••• ••••" required/></td>
+                                <td><label id="Csecure">Security code*: </label></td>
+                                <td><input type="number" name="Csecure" id="Csecure" maxlength="3" minlength="3" size="4px" placeholder="CVC" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>EXP date*: </label></td>
+                                <td><input type="month" name="EXdate" id="EXdate" placeholder="MM/YYYY" required/></td>
+                            </tr>
+                        </table>
+                    
+                    </fieldset>
+                    <p class="message1"></p>
+                </form>
+                    <div class="buttonC">
+                        <button id="button" class="button1">Sign in</button>
+                    </div>
+            </div>
+            <div class="login">
+                <h1 id="h1">Log in</h1>
+                <p>Please enter your name, E-mail and phone number to log in</p>
+                <form name="login" action="process.php">
+                    <fieldset id="F4">
+                        <legend>Log in information</legend>
+                        <table>
+                            <tr>
+                                <td><label>Name: </label></td>
+                                <td><input type="text" name="loginName" id="loginName" placeholder="Enter your full name here" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>E-mail</label></td>
+                                <td><input type="email" name="loginEmail" id="loginEmail" placeholder="Enter your E-mail"/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Phone number</label></td>
+                                <td><input type="number" name="loginPhone" id="loginPhone" placeholder="Enter your phone number" required/></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <p class="message2"></p>
+                </form>
+                <div class="buttonC">
+                    <button id="button" class="button2">Log in</button>
+                </div>
+            </div>
+       
+        </div>  
+        
+        
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <script src="storeF.js" src="storeG.js" src="storeC.js"></script>
+    <script src="signup.js"></script> 
+    </body>
+</html>

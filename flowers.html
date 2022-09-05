@@ -1,0 +1,351 @@
+
+
+
+<!DOCTYPE html>
+<html lang ="en"></html>
+<html>
+    <head>   
+        <title>Jolie | Flowers</title>
+        <style>
+            body{
+              background-color: rgb(208, 223, 228); 
+                   
+            }
+
+            #head{
+            display: flex;
+            flex-flow: row;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            margin: 8px;
+            padding: 4px;
+            }
+            #logo { 
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+        .button{
+         border: none;
+         color: black ;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         border-radius: 4px;
+         outline: none;
+         margin: 10px;
+         padding: 10px;
+         }
+
+        .button:hover{
+         background-color: rgba(128, 128, 128, 0.226);
+         }
+
+
+        .row{
+          display: flex;
+          flex-direction: row;
+          flex: 1 0 auto;
+          border-style: solid;
+          border: 4px black;
+          margin: 55px;
+          justify-content: center;
+           }
+
+  .img {
+    width: 290px;
+    height: 290px;
+    border-radius: 12%;
+   }
+
+  section div{
+  width: 300px;
+  text-align:center;
+  background-color: transparent;
+  border: 2px solid rgba(229, 82, 92,0.5);
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 12%;
+  }
+
+.price{
+    display: block;
+    font-weight: bold;
+}
+.tips{
+      
+      width: 200px;
+      height: 100px;
+      border: solid rgba(229, 82, 92) 1px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      padding: 0.9cm;
+      padding-top: 5px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 10px;
+         
+           
+      }
+
+  #FT,.point{
+       font-size: 11px;
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       color:rgba(229, 82, 92);   
+      }
+
+    a+h3{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       color:rgba(229, 82, 92);   
+       font-size: 20px;
+      }
+
+   h3 > h5{
+            
+      color:rgba(229, 82, 92);
+        
+      }
+      #h1{
+       color: white;
+       font-style: italic;
+       font-weight: bold;
+       text-align: center;
+      }
+
+      
+        .btn{
+         text-align: center;
+         text-decoration: none;
+         font-size: 15px;
+         color: rgba(229, 82, 92);
+         border-radius: 10%;
+         border: 1px;
+         font-style: normal;
+        }
+        .btn:hover{
+       background-color: rgba(128, 128, 128, 0.226);
+       }
+      
+
+      
+        </style>
+   
+    </head>
+    <body> 
+        
+        <div id="content">
+
+        <ul id="head">
+            <li><a class="button" href="home.html">Home</a></li>
+            <li><a class="button" href ="about.html">About</a></li>
+           
+         
+            <li id="logo"><img src="JolieL.png" width="100px" height="100px"></li>
+            <li><a class="button" href="signup.html">Sign up</a></li>
+            <li class="cart"><a class="button" href="Cart.html">Cart</a>(<span>0</span>)</li>
+        </ul>
+        
+    <header>
+        <h1 id="h1">Flowers In Vases</h1>
+        <ul class="tips"> 
+            <h3 id="FT">Flowers Care Tips:</h3>
+             <li class="point">Keep your flowers away from heat and bright light.</li>
+             <li class="point">Change the water entirely every 2-3 days.</li>
+             <li class="point">Clean your vase thoroughly, any lingering bacteria will make your flowers wilt faster.</li>
+            
+       </ul>
+      </header>
+<section class="content">
+       <section class="row">
+           <div  class="divpic">
+                 <a href="#"><img src="blue.jpg" class="img"  /></a> 
+                 <h3>Blue Valley</h3>
+                 <h5>Clasic bluebell and white jasmine flowers</h5>
+                 <span class="price"> 35 $</span>
+                <button class="button btn add-cart">Add to Cart</button>
+                 </div>
+           <div class="divpic">
+               <a href="#"><img src="neworange.jpg" class="img"  /></a>
+               <h3>Orange Breeze</h3>
+               <h5>Vase of orange calendula flowers</h5> 
+                <span class="price">50 $</span>
+                <button class="button btn add-cart">Add to Cart</button>
+                 </div>
+            <div class="divpic">
+                 <a href="#"><img src="colorful.jpg"class="img" /></a> 
+                 <h3>Colorful Garden</h3>
+                 <h5>A collection of colorful peony flowers</h5>
+                 <span class="price">53 $</span>
+                 <button class="button btn add-cart">Add to Cart</button>
+                 </div>
+             </section>
+
+
+
+            <section class="row">
+            <div class="divpic">
+                <a href="#"><img src="purple.jpg"  class="img"  /></a> 
+                <h3>The Purple Spring</h3>
+                <h5>A collection of colorful orchids and asters</h5>
+                <span class="price">60 $</span>
+                <button class="button btn add-cart">Add to Cart</button>
+            </div>
+            <div class="divpic">
+                 <a href="#"><img src="red.jpg" class="img"  /></a>
+                 <h3>Red Rosa</h3>
+                 <h5>Red rose flowers vase</h5> 
+                 <span class="price">90 $</span>
+                 <button  class="button btn add-cart">Add to Cart</button>
+             </div>
+             <div class="divpic">
+                 <a href="#"><img src="sunflower.jpg"  class="img"  /></a> 
+                 <h3>SunFlowers Valley</h3>
+                 <h5>A collection of swiss sunflowers</h5>
+                 <span class="price">84 $</span>
+                 <button  class="button btn add-cart">Add to Cart</button>
+             </div>
+            </section>
+
+
+
+        <section class="row">
+            <div class="divpic">
+                <a href="#"><img src="purple2.jpg" class="img"  /></a> 
+                <h3>The Purple World</h3>
+                <h5>A collection of purple iris flowers</h5>
+                <span class="price">113 $</span>
+                <button  class="button btn add-cart">Add to Cart</button>
+             </div>
+            <div class="divpic">
+                <a href="#"><img src="tulip.jpg"  class="img"  /></a> 
+                <h3>Tulip Vase</h3>
+                <h5>Simple pink tulip vase</h5>
+                <span class="price">100 $</span>
+                <button  class="button btn add-cart">Add to Cart</button>
+             </div>
+            <div class="divpic">
+                <a href="#"><img src="white.jpg"  class="img"  /></a> 
+                <h3>White Amazon</h3>
+                <h5>A Vase of white daisy flowers</h5>
+                <span class="price">96 $</span>
+                <button  class="button btn add-cart">Add to Cart</button>
+            </div>
+
+
+
+            </section>
+        <section class="row">
+            <div class="divpic">
+                <a href="#"><img src="white2.jpg" class="img"  /></a> 
+                <h3>Simple White</h3>
+                <h5>A simple white jasmine vase</h5>
+                <span class="price">40 $</span>
+                <button class="button btn add-cart">Add to Cart</button>
+                  </div>
+            <div class="divpic">
+                <a href="#"><img src="yellow.jpg"class="img"  /></a> 
+                <h3>Lily Forest</h3>
+                <h5>Water lily vase flowers</h5>
+                <span class="price">66 $</span>
+                <button  class="button btn add-cart">Add to Cart</button>
+                </div>
+            <div class="divpic"> 
+                <a href="#"><img src="red2.jpg"  class="img"  /></a> 
+                <h3>Elegant Red</h3>
+                <h5>A Vase of red poppy flowers</h5>
+                <span class="price">105 $</span>
+                <button  class="button btn add-cart">Add to Cart</button>
+                </div>     
+            </section>
+
+
+
+        <section class="row">
+            <div class="divpic">
+                <a href="#"><img src="green.jpg" class="img"  /></a> 
+                <h3>Pure</h3>
+                <h5>Vase of snowdrop flowers</h5>
+                <span class="price">40 $</span>
+                <button class="button btn add-cart">Add to Cart</button>
+                  </div>
+            <div class="divpic">
+                    <a href="#"><img src="blue2.jpg"  class="img"  /></a> 
+                    <h3>Blue Beach</h3>
+                    <h5>An elegant blue salvia vase</h5>
+                    <span class="price">66 $</span>
+                    <button  class="button btn add-cart">Add to Cart</button>
+                 </div>
+            <div class="divpic"> 
+                  <a href="#"><img src="pink.jpg" class="img"  /></a> 
+                  <h3>Bloom</h3>
+                  <h5>A collection of pink and white jasmine flowers</h5>
+                  <span class="price">105 $</span>
+                  <button  class="button btn add-cart">Add to Cart</button>
+                </div>    
+            </section>
+
+
+
+        <section class="row">
+            <div class="divpic">
+                <a href="#"><img src="orange2.jpg" class="img"  /></a> 
+                <h3>Pastel Dreams</h3>
+                <h5>A collection of colorful rose flowers</h5>
+                <span class="price">40 $</span>
+                <button class="button btn add-cart">Add to Cart</button>
+                  </div>
+             <div class="divpic">
+                    <a href="#"><img src="unique.jpg" class="img"  /></a> 
+                    <h3>Unique</h3>
+                    <h5>A simple and unique belgian tulip flowers</h5>
+                    <span class="price">66 $</span>
+                    <button  class="button btn add-cart">Add to Cart</button>
+                 </div>
+            <div class="divpic">
+                  <a href="#"><img src="green2.jpg" class="img"  /></a> 
+                  <h3>Amsterdam</h3>
+                  <h5>A collection of white lily flowers</h5>
+                  <span class="price">105 $</span>
+                  <button  class="button btn add-cart">Add to Cart</button>
+                 </div>      
+            </section>
+ 
+
+
+         <section class="row">
+            <div class="divpic">
+                <a href="#"><img src="yellow2.jpg" class="img"  /></a> 
+                <h3>Colorful Basket</h3>
+                <h5>A unique bouquet of colorful lotus flowers</h5>
+                <span class="price">40 $</span>
+                <button class="button btn add-cart">Add to Cart</button>
+                  </div>
+            <div class="divpic">
+                    <a href="#"><img src="green3.jpg"  class="img"  /></a> 
+                    <h3>Soft Anemone</h3>
+                    <h5>Vase of white anemone flowers</h5>
+                    <span class="price">66 $</span>
+                    <button  class="button btn add-cart">Add to Cart</button>
+                    </div>
+            <div class="divpic"> 
+                  <a href="#"><img src="tulip and more.jpg" class="img"  /></a> 
+                  <h3>Tulip And More</h3>
+                  <h5>A collection of italien tulips</h5>
+                  <span class="price">105 $</span>
+                  <button  class="button btn add-cart">Add to Cart</button>
+                  </div>    
+            </section>
+
+       </div>
+     </section>
+     <script src="storeF.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   </body>
+</html>
+
+
